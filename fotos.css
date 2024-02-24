@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #d21617;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+li{
+    list-style: none;
+    color: aliceblue;
+    background-color: black;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 19px;
+    font-family: 'kdam thmor pro', sans-serif;
+}
+
+li:hover{
+    color: #d21617;
+}
+
+#logo{
+    width: 150px;
+    height: auto;
+}
+
+.image-1{
+    background-image: url("https://wallpapers.com/images/hd/the-batman-2022-batmobile-v45f3jv6abhutx4f.jpg")
+}
+
+.image-2{
+    background-image: url("https://quilombogeek.files.wordpress.com/2022/04/20220309-ovicio-batman-dc-filme-poster-internacional.jpg?w=1300&h=768&crop=1");
+}
+.image-3{
+    background-image: url("https://i.pinimg.com/736x/2a/a5/4c/2aa54cdea96bae0402d6d5f2cb3f0399.jpg");
+}
+.image-4{
+    background-image: url("https://tm.ibxk.com.br/2022/01/20/20093035616051.jfif");
+}
+.image-5{
+    background-image: url("https://static2.amica.it/wp-content/uploads/2022/03/IPA_IPA29108963.jpg");
+}
+.image-6{
+    background-image: url("https://hips.hearstapps.com/hmg-prod/images/zoe-kravitz-robert-pattinson-the-batman-1645186685.jpeg");
+}
+.image-7{
+    background-image: url("https://images8.alphacoders.com/121/1212791.jpg");
+}
+.image-8{
+    background-image: url("https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/07c53b1e-7aee-477d-8d45-c16c080faa75/new-featurette-for-the-batman-offers-additional-details-on-jeffrey-wrights-jim-gordon.jpg");
+}
+.image-9{
+    background-image: url("https://images.rtl.fr/~c/1200v800/rtl/www/1302359-jeffrey-wright-rejoint-officiellement-gotham-city.jpg");
+}
+.image-10{
+    background-image: url("https://i0.wp.com/minhavisaodocinema.com.br/wp-content/uploads/2022/03/batman-mvdc-9.jpg?resize=425%2C595&ssl=1");
+}
+.image-11{
+    background-image: url("https://wallpapercave.com/wp/wp10141790.jpg");
+}
+.image-12{
+    background-image: url("https://images.static-bluray.com/products/20/62778_7_large.jpg");
+}
+
+
+.actor-cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+   
+}
+
+.cards-content{
+    width: 90%;
+    row-gap: 25px;
+    column-gap: 25px;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+}
+
+.card {
+    width: 100%;
+    height: 500px;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 8%;
+    border: solid;
+    border-color: black;
+}
+
+.card:hover{
+    transform: scale(1.08);
+}
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+span{
+    background-color: #000;
+    color: #fff;
+    font-family: 'kdam thmor pro', sans-serif;
+}
+
+.footer-navigation{
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width:768px ){
+    .footer-navigation{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .cards-content{
+        width: 95%;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+}

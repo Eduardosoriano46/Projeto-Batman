@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    font-family: 'kdam thmor pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-image: url("https://i.ytimg.com/vi/RirgrS37ZNA/hqdefault.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;  
+}
+
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .5s;
+}
+
+li:hover{
+    color: #d21617
+}
+
+#logo{
+    width: 150px;
+    height: auto;
+}
+
+.contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+    width: 500px;   
+    color: #fff;
+    text-shadow: -1px -1px 0 #000;
+}
+
+.contato{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 100px;
+    color:aliceblue;
+    text-shadow: -5px -5px 0 #000; 
+   
+}
+
+input{
+    border-radius: 10px;
+    height: 20px;
+    outline: unset;
+    
+}
+
+textarea{
+    border-radius: 10px;
+    outline: unset;
+}
+
+button{
+    margin-top: 10px;
+    border-radius: 20px;
+    transition: .5s;
+    height: 30px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #b30000;
+    color: #fff;
+}
+
+footer{
+    height: 300px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000;
+    }
+
+
+span{
+    color: #fff;
+}
+
+.footer-navigation{
+    display: none;
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+
+    h1{
+        width: 85%;
+
+    }
+
+    .footer-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contain{
+        width: 85%;
+    }
+}
+
+
+
